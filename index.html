@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waniza Khan Portfolio</title>
+  <style>
+    /* Reset & Base Styles */
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', sans-serif; }
+    body { background:#f8f9fa; color:#333; line-height:1.6; }
+    a { text-decoration:none; color: #0d6efd; }
+    
+    /* Button Styles */
+    button {
+      cursor: pointer;
+      background: linear-gradient(135deg, #4dabf7, #1971c2); /* lighter blue gradient */
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 16px; /* smaller height */
+      font-size: 14px;
+      font-weight: 600;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    button:hover {
+      background: linear-gradient(135deg, #1971c2, #0b4f91);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* Header */
+    header { background:#0d6efd; color:#fff; padding:30px 0; text-align:center; border-bottom:4px solid #084298; }
+    header h1 { margin-bottom:5px; font-size:2.5em; }
+    header p { margin-bottom:0; font-size:14px; }
+    nav { margin-top:12px; }
+    nav a { margin: 0 15px; color:#fff; font-weight:600; }
+    nav a:hover { text-decoration:underline; }
+
+    /* Skills Section */
+    .skills { display:flex; flex-wrap:wrap; justify-content:center; margin:40px 0; }
+    .skill { background:#e7f1ff; color:#0d6efd; margin:10px; padding:12px 22px; border-radius:5px; font-weight:600; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+
+    /* Projects Section */
+    .projects { max-width:1200px; margin:0 auto 60px; padding:0 20px; }
+    .projects h2 { text-align:center; margin-bottom:25px; color:#0d6efd; }
+    .project-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:25px; }
+    .project-card { background:#fff; padding:18px; border-radius:12px; display:flex; flex-direction:column; transition: transform 0.3s, box-shadow 0.3s; box-shadow:0 2px 10px rgba(0,0,0,0.1); }
+    .project-card:hover { transform: translateY(-8px); box-shadow:0 10px 20px rgba(0,0,0,0.15); }
+
+    /* CSS Placeholder for Project Images */
+    .project-image {
+      height:150px; 
+      margin-bottom:12px; 
+      border-radius:8px; 
+      display:flex; 
+      align-items:center; 
+      justify-content:center; 
+      font-size:24px; 
+      font-weight:bold; 
+      color:#0d6efd;
+      background: linear-gradient(135deg, #cfe2ff, #9ec5fe);
+      box-shadow: inset 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .project-card h3 { margin-bottom:12px; color:#0d6efd; font-size:18px; }
+
+    /* Contact Section */
+    .contact { background:#fff; padding:35px 20px; text-align:center; border-radius:12px; max-width:700px; margin:0 auto 60px; box-shadow:0 2px 10px rgba(0,0,0,0.1); }
+    .contact h2 { color:#0d6efd; margin-bottom:18px; }
+    .contact p { margin:8px 0; font-size:16px; }
+
+    /* Footer */
+    footer { background:#0d6efd; color:#fff; text-align:center; padding:18px 0; }
+
+    /* Responsive */
+    @media(max-width:600px){
+      .skills { flex-direction:column; align-items:center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Waniza Khan</h1>
+    <p>Email: <a href="mailto:winikhan929@gmail.com">winikhan929@gmail.com</a></p>
+    <nav>
+      <a href="https://github.com/winikhan" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/waniza-khan-32453b301" target="_blank">LinkedIn</a>
+    </nav>
+  </header>
+
+  <!-- Skills -->
+  <section class="skills">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Python</div>
+    <div class="skill">TypeScript</div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects">
+    
+    <h2>HTML/CSS Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-image">HTML/CSS</div>
+        <h3>Ecomart Webpage</h3>
+        <button onclick="window.open('https://github.com/winikhan/Resposive_web-page', '_blank')">View Project</button>
+      </div>
+      <div class="project-card">
+        <div class="project-image">HTML/CSS</div>
+        <h3>Travel Website</h3>
+        <button onclick="window.open('https://github.com/winikhan/Travel_Website.git', '_blank')">View Project</button>
+      </div>
+    </div>
+
+    <h2>TypeScript Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-image">TS</div>
+        <h3>Simple Calculator</h3>
+        <button onclick="window.open('https://github.com/winikhan/Simple-Calculator', '_blank')">View Project</button>
+      </div>
+      <div class="project-card">
+        <div class="project-image">TS</div>
+        <h3>CLI Number Guessing Game</h3>
+        <button onclick="window.open('https://github.com/winikhan/cli_number_guessing_game', '_blank')">View Project</button>
+      </div>
+      <div class="project-card">
+        <div class="project-image">TS</div>
+        <h3>Todo List Application</h3>
+        <button onclick="window.open('https://github.com/winikhan/Todo-List_-application-', '_blank')">View Project</button>
+      </div>
+      <div class="project-card">
+        <div class="project-image">TS</div>
+        <h3>ATM Machine</h3>
+        <button onclick="window.open('https://github.com/winikhan/ATM_Machine', '_blank')">View Project</button>
+      </div>
+      <div class="project-card">
+        <div class="project-image">TS</div>
+        <h3>Currency Converter</h3>
+        <button onclick="window.open('https://github.com/winikhan/Currency_Converter', '_blank')">View Project</button>
+      </div>
+      <div class="project-card">
+        <div class="project-image">TS</div>
+        <h3>Words Counter</h3>
+        <button onclick="window.open('https://github.com/winikhan/Words_Counter', '_blank')">View Project</button>
+      </div>
+    </div>
+
+    <h2>Python Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-image">Py</div>
+        <h3>Password Strength Meter</h3>
+        <button onclick="window.open('https://github.com/winikhan/Password_strength_meter', '_blank')">View Project</button>
+      </div>
+      <div class="project-card">
+        <div class="project-image">Py</div>
+        <h3>Unit Converter (Streamlit + Python)</h3>
+        <button onclick="window.open('https://github.com/winikhan/unit_converter', '_blank')">View Project</button>
+      </div>
+      <div class="project-card">
+        <div class="project-image">Py</div>
+        <h3>File Converter</h3>
+        <button onclick="window.open('https://github.com/winikhan/Growth_Mindset-Challengeperosnnal', '_blank')">View Project</button>
+      </div>
+      <div class="project-card">
+        <div class="project-image">Py</div>
+        <h3>Library Management System</h3>
+        <button onclick="window.open('https://github.com/winikhan/Personal-Library-Management-System', '_blank')">View Project</button>
+      </div>
+      <div class="project-card">
+        <div class="project-image">Py</div>
+        <h3>Secure Data Encryption</h3>
+        <button onclick="window.open('https://github.com/winikhan/secure-data-encryption', '_blank')">View Project</button>
+      </div>
+      <div class="project-card">
+        <div class="project-image">Py</div>
+        <h3>Career Mentor Agent (AI)</h3>
+        <button onclick="window.open('https://github.com/winikhan/Career_Mentor_Agent', '_blank')">View Project</button>
+      </div>
+      <div class="project-card">
+        <div class="project-image">Py</div>
+        <h3>Game Manager Assistant</h3>
+        <button onclick="window.open('https://github.com/winikhan/Game_Manager_Assistant', '_blank')">View Project</button>
+      </div>
+      <div class="project-card">
+        <div class="project-image">Py</div>
+        <h3>Student Assistant Agent</h3>
+        <button onclick="window.open('https://github.com/winikhan/Student_Assistant_Ag', '_blank')">View Project</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:winikhan929@gmail.com">winikhan929@gmail.com</a></p>
+   
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/waniza-khan-32453b301" target="_blank">Waniza Khan</a></p>
+    <p>GitHub: <a href="https://github.com/winikhan" target="_blank">winikhan</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Waniza Khan | All Rights Reserved
+  </footer>
+
+</body>
+</html>
